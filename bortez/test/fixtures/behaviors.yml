@@ -2,6 +2,8 @@
 
 one:
   name: MyString
+  behavior_id: 
 
 two:
   name: MyString
+  behavior_id: 
