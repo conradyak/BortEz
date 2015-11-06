@@ -1,2 +1,9 @@
-<h1>Users#new</h1>
-<p>Find me in app/views/users/new.html.erb</p>
+<div class="">
+<h1>Join BortEz Today! Become a Memeber</h1>
+<%= form_for @user do |f| %>
+<%= f.label :name%><br>
+<%= f.text_field :name%><br>
+
+<%= f.submit "Sign Up"%><br>
+ <% end %>
+</div>
