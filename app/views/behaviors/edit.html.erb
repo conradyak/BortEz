@@ -1,0 +1,13 @@
+<div class="container">
+
+      <h3>Edit A Behavior</h3>
+      <%= form_for @behavior do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+
+        <%= f.submit 'Update a Behavior' %>
+      <% end %>
+
+      <%= link_to 'Behavior Page', '/behaviors' %>
+
+</div>

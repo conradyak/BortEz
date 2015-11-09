@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bortez</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Righteous' rel='stylesheet' type='text/css'>
+</head>
+  <body>
+
+    <header>BortEZ</header>
+
+
+    <div class="navigation">
+
+              <ul>
+                <li><%= link_to 'Students', '/students' %></li>
+                <li><%= link_to 'Behaviors', '/behaviors' %></li>
+                <li><%= link_to 'Anecdotes', '/anecdotes' %></li>
+                <li><%= link_to 'Home', '/users/show ' %></li>
+              </ul>
+    </div>
+
+              <%= yield %>
+
+  </body>
+
+</html>

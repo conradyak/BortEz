@@ -1,0 +1,18 @@
+<div class="container">
+
+  <h1>Behavior Index</h1>
+
+    <ul>
+        <% @behaviors.each do |behavior|%>
+
+          <li><%= link_to behavior.name, behavior_path(behavior) %> <%= behavior.id %></li>
+
+          <li>  <%= button_to 'Delete a Behavior!', behavior_path(:id => behavior), :method => :delete %> </li>
+
+        <% end %>
+        
+    </ul>
+
+    <%= link_to 'Add A Behavior', '/behaviors/new' %>
+
+</div>

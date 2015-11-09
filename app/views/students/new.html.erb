@@ -1,0 +1,13 @@
+<div class="container">
+
+      <h1>Add A New Student</h1>
+      <%= form_for @student do |f| %>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+
+        <%= f.submit 'Add Student' %>
+      <% end %>
+
+      <%= link_to 'Students Page', '/students' %>
+
+</div>

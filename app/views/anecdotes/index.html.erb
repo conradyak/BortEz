@@ -1,0 +1,16 @@
+<div class="container">
+
+  <h1>Comment Gallery</h1>
+
+      <ul>
+          <% @anecdotes.each do |anecdote| %>
+            <li> <%= link_to anecdote.comment, anecdote_path(anecdote.comment) %> <%= anecdote.id %></li>
+
+            <li>  <%= button_to 'Delete This Comment!', anecdote_path(:id => anecdote), :method => :delete %></li>
+
+          <% end %>
+      </ul>
+
+
+      <%= link_to 'Add A New Anecdote', '/anecdotes/new' %>
+</div>

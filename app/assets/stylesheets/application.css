@@ -1,0 +1,69 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+   * {
+     font-family: 'Righteous', cursive;
+   }
+   body {
+    background-image: url(http://www.freevector.com/site_media/preview_images/FreeVector-Geometric-Pattern-Graphics.jpg);
+    background-size: cover;
+   }
+
+   header {
+     margin: 0 auto;
+     text-align: center;
+     width: 65%;
+     font-size: 100px;
+     color: #F48730;
+     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+   }
+
+   .navigation {
+     text-align: center;
+   }
+   .navigation>ul>li {
+     display: inline;
+     background-color: #9EA3A9;
+     font-size: 40px;
+     list-style: disc;
+   }
+   .container {
+     width: 65%;
+     border-radius: 40px;
+     background-color: #2F4F4F;
+     padding: 10px;
+     margin: 20px auto;
+     text-align: center;
+     color: white;S
+   }
+
+   .container>ul {
+     list-style-type: none;
+     font-size: 30px;
+   }
+
+    .container>h1 {
+      font-size: 40px;
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+
+    a {
+     color: white;
+     color: inherit;
+     text-decoration: none;
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+   }
